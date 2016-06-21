@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "jade --out www src/index.jade && coffee --compile --output www src/app.coffee ",
+    "compile": "jade --out client/www client/src/index.jade && coffee --compile --output client/www client/src/app.coffee ",
     "test": "./node_modules/.bin/karma start"
   },
   "author": "",

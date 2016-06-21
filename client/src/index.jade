@@ -5,7 +5,7 @@ html(ng-app="todo-list" ng-controller="TodoListController")
     title {{title}}
   body
     h1 {{title}}
-    script(src="../bower_components/angular/angular.js")
+    script(src="../../bower_components/angular/angular.js")
     script(src="app.js")
     ul(ng-repeat="todo in todolist")
         span(ng-click="remove(todo)") X
