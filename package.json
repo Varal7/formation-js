@@ -2,7 +2,7 @@
   "name": "todo-list",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
     "compile": "jade --out client/www client/src/index.jade && coffee --compile --output client/www client/src/app.coffee ",
     "test": "./node_modules/.bin/karma start"
@@ -12,7 +12,15 @@
   "dependencies": {
     "bower": "^1.7.9",
     "coffee-script": "1.10.0",
-    "jade": "1.11.0"
+    "compression": "^1.6.2",
+    "cors": "^2.7.1",
+    "helmet": "^2.1.1",
+    "jade": "^1.11.0",
+    "loopback": "^2.29.0",
+    "loopback-boot": "^2.19.0",
+    "loopback-component-explorer": "^2.5.0",
+    "loopback-datasource-juggler": "^2.46.1",
+    "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
