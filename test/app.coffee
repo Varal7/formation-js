@@ -25,3 +25,10 @@ describe 'TodoListController', ->
     $scope.todolist = [1,2,3,4]
     $scope.remove(3)
     expect($scope.todolist).to.have.length(3)
+
+  it 'should add an element', ->
+    $scope.todolist = [1,2,3,4]
+    $scope.newTask = "New task"
+    $scope.newPriority = 3
+    $scope.add()
+    expect($scope.todolist).to.have.length(5)
