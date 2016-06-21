@@ -1,0 +1,22 @@
+{
+  "name": "todo-list",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Varal7 <varaal@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7"
+  }
+}
