@@ -17,8 +17,5 @@ describe 'TodoListController', ->
   it 'should have a title property initialized', ->
     $scope.title.should.equal 'Ma todo list'
 
-  it 'should fail', ->
-    expect(true).to.equal false
-
   it 'should succeed', ->
     expect(true).to.equal true
