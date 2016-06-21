@@ -5,12 +5,12 @@ module.exports = (config) ->
     files: [
       'bower_components/angular/angular.min.js'
       'bower_components/angular-mocks/angular-mocks.js'
-      'src/app.coffee'
-      'test/app.coffee'
+      'client/src/app.coffee'
+      'client/test/app.coffee'
     ]
     preprocessors:
-      'src/app.coffee': ['coffee']
-      'test/app.coffee': ['coffee']
+      'client/src/app.coffee': ['coffee']
+      'client/test/app.coffee': ['coffee']
     reporters: ['mocha']
     port: 9876
     colors: true
