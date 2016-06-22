@@ -6,9 +6,10 @@ angular.module 'todo-list', ['lbServices']
     Todo.deleteById({id:el.id})
     $scope.todolist.splice($scope.todolist.indexOf(el),1)
   $scope.add = (el) ->
-    $scope.todolist.push
+    todo = Todo.create
       task: $scope.newTask
       priority: $scope.newPriority
       checked: false
+    $scope.todolist.push(todo)
     $scope.newTask = ""
     $scope.newPriority = 0
