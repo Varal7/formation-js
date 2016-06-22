@@ -5,7 +5,8 @@
   "main": "server/server.js",
   "scripts": {
     "compile": "jade --out client/www client/src/index.jade && coffee --compile --output client/www client/src/app.coffee && cp client/src/js/* client/www",
-    "test": "./node_modules/.bin/karma start"
+    "test": "./node_modules/.bin/karma start",
+    "server:start": "node ."
   },
   "author": "",
   "license": "ISC",
