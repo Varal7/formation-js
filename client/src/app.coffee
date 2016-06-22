@@ -1,5 +1,5 @@
-angular.module 'todo-list', []
-.controller 'TodoListController', ($scope, $http) ->
+angular.module 'todo-list', ['lbServices']
+.controller 'TodoListController', ($scope, $http, Todo) ->
   $scope.title = 'Ma todo list'
   $http.get("todolist.json").then((res) -> $scope.todolist = res.data)
   $scope.remove = (el) ->
